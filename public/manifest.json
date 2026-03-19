@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Spotify Mood Discovery",
+  "description": "Mood-based Spotify recommendations overlay",
+  "version": "0.1.0",
+  "permissions": ["storage", "identity"],
+  "host_permissions": [
+    "*://*.spotify.com/*",
+    "*://open.spotify.com/*",
+    "*://*.googleusercontent.com/*",
+    "http://localhost:4000/*"
+  ],
+  "background": {
+    "service_worker": "worker.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://open.spotify.com/*", "*://*.spotify.com/*"],
+      "js": ["inject.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "index.html"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["assets/*"],
+      "matches": ["*://open.spotify.com/*", "*://*.spotify.com/*"]
+    }
+  ]
+}
