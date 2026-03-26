@@ -10,6 +10,7 @@ const mockTracks = [
   },
   {
     id: 'mock-2',
+    
     name: 'Summer Lift',
     artist: 'Velvet Tempo',
     albumImageUrl: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=300&h=300&fit=crop',
@@ -18,9 +19,9 @@ const mockTracks = [
 ]
 
 chrome.runtime.onMessage.addListener((message, _sender, sendResponse) => {
-  if (message?.type !== 'MOOD_DISCOVERY_GET_RECOMMENDATIONS') return undefined
+  if (message?.type !== 'MOOD_DISCOVERY_GET_RECOMMENDATIONS') return undefined;
 
-  ;(async () => {
+  (async () => {
     try {
       const response = await fetch(`${API_BASE_URL}/api/recommendations`, {
         method: 'POST',
