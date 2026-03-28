@@ -14,7 +14,7 @@ const mockTracks = [
     artist: 'Velvet Tempo',
     albumImageUrl: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=300&h=300&fit=crop',
     spotifyUrl: 'https://open.spotify.com',
-  }
+  },
 ]
 
 chrome.runtime.onMessage.addListener((message, _sender, sendResponse) => {
