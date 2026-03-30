@@ -1,5 +1,5 @@
 {
-  "manifest_version": 3
+  "manifest_version": 3,
   "name": "Spotify Mood Discovery",
   "description": "Mood-based Spotify recommendations overlay",
   "version": "0.1.0",
