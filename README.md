@@ -29,7 +29,7 @@ VITE_API_BASE_URL=http://localhost:4000
   "preferredGenres": ["afrobeats", "amapiano"],
   "favoriteArtists": ["Burna Boy", "Tyla"],
   "energy": 75,
-  "language": "english"
+  "language": "English"
 }
 ```
 
