@@ -3,7 +3,7 @@
 Spotify-style frontend that simulates a Chrome extension injection flow:
 - full-screen mood picker overlay
 - slide-in form (genre, artist, energy)
-- persistent mood icon entry point in sidebar
+- persistent mood icon entry point in sideba
 - recommendations cards
 
 ## Run locally
