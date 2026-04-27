@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 
 const moodOptions = [
   { id: 'sad', label: 'Sad', icon: CloudRainIcon, accent: 'from-sky-400/30 to-sky-700/20' },
-  { id: 'angry', label: 'Angry', icon: FlameIcon, accent: 'from-red-500/30 to-red-800/20' },
+  { id: 'angry', label: 'Angry', icon: FlameIcon, accent: 'from-red-500/30 to-red-800/20' }
   { id: 'happy', label: 'Happy', icon: SunIcon, accent: 'from-yellow-300/30 to-amber-600/20' },
   { id: 'hyped', label: 'Hyped', icon: BoltIcon, accent: 'from-orange-400/30 to-red-600/20' },
   { id: 'focused', label: 'Focused', icon: TargetIcon, accent: 'from-emerald-400/30 to-green-700/20' },
